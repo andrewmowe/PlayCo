@@ -79,6 +79,7 @@
 			$navlink = $j('#nav > .centerwrap > ul > li'),
 			$subhead = $j('.subhead-content'),
 			$tagurl = "<?php echo get_bloginfo('url'); ?>/category/hub";
+			$logomd = $j('.logo-img.md');
 			
 		
 		function afterHomeSlide(curr, next, opt, flag) {
@@ -118,7 +119,7 @@
 							$navlink.children('a').animate({
 								'padding': '20px 10px'
 							}, 400);
-							$j('.logo-img.md').fadeOut(400, function() {
+							$logomd.fadeOut(400, function() {
 								$j('.logo-img.sm').fadeIn(400);					
 							});
 							$header.addClass('sticky');
@@ -127,7 +128,7 @@
 					} else { // should be big header
 						if($header.hasClass('sticky')) {
 							$j('.logo-img.sm').fadeOut(400, function() {
-								$j('.logo-img.md').fadeIn(400);						
+								$logomd.fadeIn(400);						
 							});
 							$navlink.children('a').animate({
 								'padding': '50px 10px'
