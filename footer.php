@@ -80,6 +80,7 @@
 			$subhead = $j('.subhead-content'),
 			$tagurl = "<?php echo get_bloginfo('url'); ?>/category/hub";
 			$logomd = $j('.logo-img.md');
+			$logosm = $j('.logo-img.sm');
 			
 		
 		function afterHomeSlide(curr, next, opt, flag) {
@@ -120,14 +121,14 @@
 								'padding': '20px 10px'
 							}, 400);
 							$logomd.fadeOut(400, function() {
-								$j('.logo-img.sm').fadeIn(400);					
+								$logosm.fadeIn(400);					
 							});
 							$header.addClass('sticky');
 							$subhead.animate({'padding-top': '9%'});
 						}
 					} else { // should be big header
 						if($header.hasClass('sticky')) {
-							$j('.logo-img.sm').fadeOut(400, function() {
+							$logosm.fadeOut(400, function() {
 								$logomd.fadeIn(400);						
 							});
 							$navlink.children('a').animate({
