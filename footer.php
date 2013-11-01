@@ -78,9 +78,10 @@
 			$doc = $j(document),
 			$navlink = $j('#nav > .centerwrap > ul > li'),
 			$subhead = $j('.subhead-content'),
-			$tagurl = "<?php echo get_bloginfo('url'); ?>/category/hub";
-			$logomd = $j('.logo-img.md');
-			$logosm = $j('.logo-img.sm');
+			$tagurl = "<?php echo get_bloginfo('url'); ?>/category/hub",
+			$logomd = $j('.logo-img.md'),
+			$logosm = $j('.logo-img.sm'),
+			$nothing = '';
 			
 		
 		function afterHomeSlide(curr, next, opt, flag) {
