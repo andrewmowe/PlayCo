@@ -82,6 +82,7 @@
 			$logomd = $j('.logo-img.md'),
 			$logosm = $j('.logo-img.sm'),
 			$nothing = '';
+			$something = '';
 			
 		
 		function afterHomeSlide(curr, next, opt, flag) {
