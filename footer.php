@@ -81,7 +81,8 @@
 			$tagurl = "<?php echo get_bloginfo('url'); ?>/category/hub",
 			$logomd = $j('.logo-img.md'),
 			$logosm = $j('.logo-img.sm'),
-			$nothing = '';			
+			$nothing = '';
+			$something ='';		
 		
 		function afterHomeSlide(curr, next, opt, flag) {
 			if($notouch.length) {
