@@ -5,6 +5,7 @@ $args = array(
 	'numberposts' => 1,
 	'order' => 'ASC',
 	'post_type' => 'plays',
+    'category_name' => 'current-season',
 	'meta_query' => array(
 		array(
 			'key' => 'active',
